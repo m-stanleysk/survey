@@ -1,0 +1,28 @@
+body {
+  background-color: #331A57;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  width: 60vw;
+  color: #ffffff;
+}
+
+form {
+  width: 70vw;
+  margin: auto;
+  padding: 1em 2em;
+  min-width: 100px;
+  max-width: 400px;
+  background-color: #E2D8F0;
+}
+
+fieldset {
+  border: none;
+}
+
+label, textarea, select {
+  display: block;
+}
