@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form: Build a Survey Form | freeCodeCamp.org</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Rhett and Link Fandom Survey</h1>
+    <p id="description"><em>This survey gathers information about Rhett and Link fan activity. Other than name and e-mail, all questions are optional.</em></p>
+    <form id="survey-form">
+	  <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Real or fannish" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="example@example.com" required /></label>
+	  </fieldset>
+	  <fieldset>
+        <label id="number-label" for="number">Age: <input id="number" type="number" placeholder="Your age" min="13" max="100" /></label>
+	  </fieldset>
+	  <fieldset>
+        <label for="dropdown">Where did you first discover Rhett and Link?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="randl">Rhett and Link channel</option>
+            <option value="gmm">Good Mythical Morning or More</option>
+            <option value="pod">Podcasts</option>
+            <option value="music">Music</option>
+            <option value="collab">Another channel</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+	  </fieldset>
+	  <fieldset>
+        <legend>Have you seen Rhett and Link live?</legend>
+        <label for="yes-live"><input id="yes-live" value="yes-live" type="radio" name="live-type" /> Yes</label>
+        <label for="no-live"><input id="no-live" value="no-live" type="radio" name="live-type" /> No</label>
+	  </fieldset>
+	  <fieldset>
+        <legend>How do you engage with Rhett and Link?</legend>
+        <label for="gmm"><input id="gmm" type="checkbox" value="gmm" /> Good Mythical Morning</label>
+        <label for="more"><input id="more" type="checkbox" value="more" /> Good Mythical More</label>
+        <label for="randl"><input id="randl" type="checkbox" value="randl" /> Rhett and Link channel</label>
+		<label for="pod"><input id="pod" type="checkbox" value="pod" /> Podcasts</label>
+        <label for="music"><input id="music" type="checkbox" value="music" /> Music</label>
+        <label for="collab"><input id="collab" type="checkbox" value="collab" /> Interviews and collaborations</label>
+        <label for="society"><input id="society" type="checkbox" value="society" /> Mythical Society</label>
+	  </fieldset>
+	  <fieldset>
+        <label for="comments">Other comments: <textarea id="comments" rows="3" cols="30" placeholder="I also watch Rhett and Link..."></textarea></label>
+	  </fieldset>
+	  <fieldset>
+        <input id="submit" type="submit" value="Submit" />
+	  </fieldset>
+    </form>
+  </body>
+</html>
